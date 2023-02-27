@@ -1,0 +1,82 @@
+:root {
+    --w: 80%;
+    --h: 82%;
+}
+
+.riddle {
+    position: relative;
+    width: var(--w);
+    height: var(--h);
+}
+
+#front1 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: calc(var(--w) / 3);
+    height: calc(var(--h) / 3);
+}
+
+#front2 {
+    position: absolute;
+    left: calc(var(--w) / 3);
+    top: 0px;
+    width: calc(var(--w) / 3);
+    height: calc(var(--h) / 3);
+}
+
+#front3 {
+    position: absolute;
+    left: calc(var(--w) * 2 / 3);
+    top: 0;
+    width: calc(var(--w) / 3);
+    height: calc(var(--h) / 3);
+}
+
+#front4 {
+    position: absolute;
+    left: 0;
+    top: calc(var(--h) / 3);
+    width: calc(var(--w) /3);
+    height: calc(var(--h) /3);
+}
+
+#front5 {
+    position: absolute;
+    left: calc(var(--w) / 3);
+    top: calc(var(--h) / 3);
+    width: calc(var(--w) /3);
+    height: calc(var(--h) /3);
+}
+
+#front6 {
+    position: absolute;
+    left: calc(var(--w) * 2 / 3);
+    top: calc(var(--h) / 3);
+    width: calc(var(--w) /3);
+    height: calc(var(--h) /3);
+}
+
+#front7 {
+    position: absolute;
+    left: 0;
+    top: calc(var(--h) * 2 / 3);
+    width: calc(var(--w) /3);
+    height: calc(var(--h) /3);
+}
+
+#front8 {
+    position: absolute;
+    left: calc(var(--w) / 3);
+    top: calc(var(--h) * 2 / 3);
+    width: calc(var(--w) /3);
+    height: calc(var(--h) /3);
+}
+
+#front9 {
+    position: absolute;
+    left: calc(var(--w) * 2 / 3);
+    top: calc(var(--h) * 2 / 3);
+    width: calc(var(--w) /3);
+    height: calc(var(--h) /3);
+}
