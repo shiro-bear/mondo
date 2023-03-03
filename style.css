@@ -1,82 +1,144 @@
 :root {
-    --w: 80%;
-    --h: 82%;
+    --w: 80vw;
+    --h: 80vw;
 }
 
 .riddle {
     position: relative;
+    left: 0;
+    top: 0;
     width: var(--w);
     height: var(--h);
+    
 }
 
 #front1 {
     position: absolute;
     left: 0;
     top: 0;
-    width: calc(var(--w) / 3);
-    height: calc(var(--h) / 3);
 }
 
 #front2 {
     position: absolute;
     left: calc(var(--w) / 3);
     top: 0px;
-    width: calc(var(--w) / 3);
-    height: calc(var(--h) / 3);
 }
 
 #front3 {
     position: absolute;
     left: calc(var(--w) * 2 / 3);
     top: 0;
-    width: calc(var(--w) / 3);
-    height: calc(var(--h) / 3);
 }
 
 #front4 {
     position: absolute;
     left: 0;
     top: calc(var(--h) / 3);
-    width: calc(var(--w) /3);
-    height: calc(var(--h) /3);
 }
 
 #front5 {
     position: absolute;
     left: calc(var(--w) / 3);
     top: calc(var(--h) / 3);
-    width: calc(var(--w) /3);
-    height: calc(var(--h) /3);
 }
 
 #front6 {
     position: absolute;
     left: calc(var(--w) * 2 / 3);
     top: calc(var(--h) / 3);
-    width: calc(var(--w) /3);
-    height: calc(var(--h) /3);
 }
 
 #front7 {
     position: absolute;
     left: 0;
     top: calc(var(--h) * 2 / 3);
-    width: calc(var(--w) /3);
-    height: calc(var(--h) /3);
 }
 
 #front8 {
     position: absolute;
     left: calc(var(--w) / 3);
     top: calc(var(--h) * 2 / 3);
-    width: calc(var(--w) /3);
-    height: calc(var(--h) /3);
 }
 
 #front9 {
     position: absolute;
     left: calc(var(--w) * 2 / 3);
     top: calc(var(--h) * 2 / 3);
+    
+}
+#front10 {
+    position: absolute;
+    display: none;
+}
+#front11 {
+    position: absolute;
+    display: none;
+}
+#front12 {
+    position: absolute;
+    display: none;
+}
+#front13 {
+    position: absolute;
+    display: none;
+}
+#front14 {
+    position: absolute;
+    display: none;
+}
+#front15 {
+    position: absolute;
+    display: none;
+}
+#front16 {
+    position: absolute;
+    display: none;
+}
+#front17 {
+    position: absolute;
+    display: none;
+}
+#front18 {
+    position: absolute;
+    display: none;
+}
+#front19 {
+    position: absolute;
+    display: none;
+}
+#front20 {
+    position: absolute;
+    display: none;
+}
+#front21 {
+    position: absolute;
+    display: none;
+}
+#front22 {
+    position: absolute;
+    display: none;
+}
+#front23 {
+    position: absolute;
+    display: none;
+}
+#front24 {
+    position: absolute;
+    display: none;
+}
+#front25 {
+    position: absolute;
+    display: none;
+}
+
+.delete {
     width: calc(var(--w) /3);
     height: calc(var(--h) /3);
+}
+
+.center_img {
+    position: relative;
+    margin: auto;
+    width: var(--w);
+    height: var(--h);
 }
