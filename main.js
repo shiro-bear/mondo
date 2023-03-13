@@ -43,56 +43,31 @@ function changeimage() {
 }
 
 //サイズを変えたらリロード
-let size = document.getElementById('size');
-size.addEventListener('change', changesize);
+let wid = document.getElementById('wid');
+wid.addEventListener('change', changesize);
+let hei = document.getElementById('hei');
+hei.addEventListener('change', changesize);
 
 function changesize() {
+    //一旦すべて見えなくする
+    
     const elements = document.getElementsByClassName('delete');
         for (let i = 0; i < 25; i++) {
             const element = elements[i];
             element.style.display = "none";
         }
-    const select = document.getElementById('size'); 
-    
-    if (select.value == "size1") {
-        //3*3のとき
-        const elements = document.getElementsByClassName('delete');
-        for (let i = 0; i < 9; i++) {
+        
+    const w = document.getElementById('wid').value; 
+    const h = document.getElementById('hei').value; 
+        for (let i = 0; i < w*h; i++) {
             const element = elements[i];
             element.style.visibility = "visible";
             element.style.display = "block";
             element.style.opacity = 1;
-            element.style.width ="calc(var(--w) /3)";
-            element.style.height ="calc(var(--h) /3)";
-            element.style.left = "calc(var(--w) *"+i%3+"/ 3)"
-            element.style.top = "calc(var(--h) *"+Math.floor(i/3)+"/ 3)"
+            element.style.width ="calc(var(--w) /"+w+")";
+            element.style.height ="calc(var(--h) /"+h+")";
+            element.style.left = "calc(var(--w) *"+i%w+"/ "+w+")"
+            element.style.top = "calc(var(--h) *"+Math.floor(i/w)+"/ "+h+")"
         }
-    } else if (select.value == "size2") {
-        //4*4のとき
-        const elements = document.getElementsByClassName('delete');
-        for (let i = 0; i < 16; i++) {
-            const element = elements[i];
-            element.style.visibility = "visible";
-            element.style.display = "block";
-            element.style.opacity = 1;
-            element.style.width ="calc(var(--w) /4)";
-            element.style.height ="calc(var(--h) /4)";
-            element.style.left = "calc(var(--w) *"+i%4+"/ 4)"
-            element.style.top = "calc(var(--h) *"+Math.floor(i/4)+"/ 4)"
-        }
-    } else if (select.value == "size3") {
-        //5*5のとき
-        const elements = document.getElementsByClassName('delete');
-        for (let i = 0; i < 25; i++) {
-            const element = elements[i];
-            element.style.visibility = "visible";
-            element.style.display = "block";
-            element.style.opacity = 1;
-            element.style.width ="calc(var(--w) /5)";
-            element.style.height ="calc(var(--h) /5)";
-            element.style.left = "calc(var(--w) *"+i%5+"/ 5)"
-            element.style.top = "calc(var(--h) *"+Math.floor(i/5)+"/ 5)"
-        }
-    }
 
 }
